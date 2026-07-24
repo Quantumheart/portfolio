@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QUANTUMHEART :: SOFTWARE PORTFOLIO</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<!-- snes.css by devMiguelCarrero (MIT) — https://github.com/devMiguelCarrero/snes.css -->
+<link rel="stylesheet" href="https://unpkg.com/snes.css@1.0.1/dist/snes.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================================================================
+     THEME TOGGLE
+     ================================================================ -->
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+  <span class="icon icon-sun">LIGHT</span>
+  <span class="icon icon-moon">DARK</span>
+</button>
+
+<!-- ================================================================
+     BOOT SCREEN
+     ================================================================ -->
+<div id="boot">
+  <div class="boot-line">super quantumheart system v1.0</div>
+  <div class="boot-line">(c) 2026 quantumheart</div>
+  <div class="boot-line">&nbsp;</div>
+  <div class="boot-line">loading portfolio.sfc ...</div>
+  <div class="boot-line">loading projects/ ...</div>
+  <div class="boot-line">loading contact info ...</div>
+  <div class="boot-line">ok</div>
+  <div class="boot-line">&nbsp;</div>
+  <div class="boot-line">ready.</div>
+  <div class="boot-line">run portfolio<span class="boot-cursor"></span></div>
+</div>
+
+<!-- ================================================================
+     MAIN CONTENT
+     ================================================================ -->
+<div id="main" class="wrap">
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">QUANTUMHEART</div>
+    <div class="tagline">press start for open source</div>
+    <div class="palette-bar" aria-hidden="true">
+      <span style="background:#00ff00"></span>
+      <span style="background:#e94560"></span>
+      <span style="background:#ffd700"></span>
+      <span style="background:#29ADFF"></span>
+      <span style="background:#00e4ff"></span>
+      <span style="background:#83769C"></span>
+      <span style="background:#e94560"></span>
+      <span style="background:#7e2553"></span>
+      <span style="background:#FFA300"></span>
+    </div>
+    <div class="dots">. . . . . . . . . . . . . . . .</div>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2 class="section-title">about</h2>
+    <div class="panel">
+      <div class="about-text">
+        <p>I'm a software developer focused on <span class="label">privacy-first communication</span> and <span class="label">open source</span>. My work centers on the Matrix ecosystem — building encrypted chat clients, push delivery infrastructure, and tools that give people control over their own data.</p>
+        <br>
+        <p> Beyond messaging, I build game systems and mods with deep progression mechanics, testing rigor, and networked multiplayer state. I care about clean architecture, thorough test coverage, and shipping software that respects users.</p>
+        <br>
+        <p>Current stack: <span class="value">Dart/Flutter</span>, <span class="value">C#/.NET</span>, <span class="value">TypeScript</span>, and whatever the project needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2 class="section-title">projects</h2>
+    <div class="projects">
+
+      <!-- KOHERA -->
+      <article class="cart" id="kohera">
+        <div class="cart-header">
+          <div class="cart-icon" style="background:#29ADFF;color:#000">K</div>
+          <div class="cart-title">KOHERA</div>
+        </div>
+        <div class="cart-body">
+          <p class="cart-desc">
+            A retro-pixel Matrix chat client — coherent threads for encrypted
+            messaging, voice/video calls, and spaces. Built with Flutter, runs
+            on desktop, mobile, and web.
+          </p>
+          <ul class="snes-list is-ocean-list-color cart-features">
+            <li>End-to-end encryption with cross-signing &amp; SAS verification</li>
+            <li>Discord/Slack-style space rail with adaptive layouts</li>
+            <li>Material You dynamic color theming (light/dark)</li>
+            <li>Voice/video calls via WebRTC</li>
+            <li>SSO, reCAPTCHA, desktop push notifications</li>
+          </ul>
+          <div class="cart-meta">
+            <span class="tag tag-dart">DART</span>
+            <span class="tag tag-flutter">FLUTTER</span>
+            <span class="tag tag-e2ee">E2EE</span>
+            <span class="tag tag-docker">DOCKER</span>
+          </div>
+          <div class="cart-links">
+            <a class="snes-button has-ocean-color" href="https://github.com/Quantumheart/Kohera" target="_blank" rel="noopener">VIEW SOURCE</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- DIVINE ASCENSION -->
+      <article class="cart" id="divine-ascension">
+        <div class="cart-header">
+          <div class="cart-icon" style="background:#e94560;color:#000">D</div>
+          <div class="cart-title">DIVINE ASCENSION</div>
+        </div>
+        <div class="cart-body">
+          <p class="cart-desc">
+            Deity-driven religion and faction systems for Vintage Story —
+            create and manage religions, earn player Favor and Religion
+            Prestige, unlock blessing trees, and organize multi-religion
+            civilizations.
+          </p>
+          <ul class="snes-list is-rose-list-color cart-features">
+            <li>Dual progression: player Favor &amp; Religion Prestige</li>
+            <li>Blessing trees with prerequisites and in-game rendering</li>
+            <li>Civilization alliances with milestone rank progression</li>
+            <li>Protobuf-net networking for server-client sync</li>
+            <li>Extensive xUnit v3 test suite with coverage reporting</li>
+            <li>Multi-language localization &amp; content moderation</li>
+          </ul>
+          <div class="cart-meta">
+            <span class="tag tag-csharp">C#</span>
+            <span class="tag tag-dotnet">.NET 8</span>
+            <span class="tag tag-apim">XUNIT</span>
+          </div>
+          <div class="cart-links">
+            <a class="snes-button has-rose-color" href="https://github.com/Quantumheart/DivineAscension" target="_blank" rel="noopener">VIEW SOURCE</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- MATRIX PUSH GATEWAY -->
+      <article class="cart" id="matrix-push-gateway">
+        <div class="cart-header">
+          <div class="cart-icon" style="background:#FFA300;color:#000">M</div>
+          <div class="cart-title">MATRIX PUSH GATEWAY</div>
+        </div>
+        <div class="cart-body">
+          <p class="cart-desc">
+            A thin TypeScript API implementing the Matrix Push Gateway spec —
+            delivers notifications via Web Push (browser PWAs) and APNs
+            (native iOS apps) from a single endpoint.
+          </p>
+          <ul class="snes-list is-sunshine-list-color cart-features">
+            <li>Web Push + APNs VoIP/alert from one /notify endpoint</li>
+            <li>Per-event duplicate suppression (event_id x pushkey)</li>
+            <li>Per-pushkey token-bucket rate limiting</li>
+            <li>Returns rejected pushkeys for homeserver cleanup</li>
+            <li>Docker Compose with Traefik TLS labels</li>
+          </ul>
+          <div class="cart-meta">
+            <span class="tag tag-ts">TYPESCRIPT</span>
+            <span class="tag tag-node">NODE.JS</span>
+            <span class="tag tag-webpush">WEB PUSH</span>
+            <span class="tag tag-apns">APNS</span>
+            <span class="tag tag-docker">DOCKER</span>
+          </div>
+          <div class="cart-links">
+            <a class="snes-button has-sunshine-color" href="https://github.com/Quantumheart/matrix-push-gateway" target="_blank" rel="noopener">VIEW SOURCE</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2 class="section-title">contact</h2>
+    <div class="contact-grid">
+      <a class="contact-item" href="mailto:codymumford@quantum-matrix.xyz">
+        <span class="contact-label">&gt; email</span>
+        <span class="contact-value">codymumford@quantum-matrix.xyz</span>
+      </a>
+      <a class="contact-item" href="https://github.com/Quantumheart" target="_blank" rel="noopener">
+        <span class="contact-label">&gt; github</span>
+        <span class="contact-value">github.com/quantumheart</span>
+      </a>
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>made with <span class="heart">♥</span> and 16-bit style · <a href="https://github.com/devMiguelCarrero/snes.css" target="_blank" rel="noopener">powered by snes.css</a></p>
+  <p style="margin-top:8px;">© 2026 quantumheart</p>
+</footer>
+
+<!-- ================================================================
+     SCRIPT
+     ================================================================ -->
+<script>
+// Theme toggle — persist in localStorage
+(function() {
+  var stored = localStorage.getItem('theme');
+  if (stored === 'light') {
+    document.documentElement.setAttribute('data-theme', 'light');
+  } else if (stored === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+})();
+
+document.getElementById('themeToggle').addEventListener('click', function() {
+  var current = document.documentElement.getAttribute('data-theme');
+  var next = current === 'light' ? 'dark' : 'light';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+});
+</script>
+
+<script>
+// Boot screen animation
+window.addEventListener('DOMContentLoaded', function() {
+  var boot = document.getElementById('boot');
+  if (!boot) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    boot.style.display = 'none';
+    return;
+  }
+  boot.classList.add('fade-out');
+  setTimeout(function() { boot.style.display = 'none'; }, 5400);
+});
+</script>
+
+</body>
+</html>
