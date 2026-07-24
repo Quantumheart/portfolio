@@ -1,6 +1,6 @@
 # Quantumheart Portfolio
 
-A PICO-8 themed static portfolio site.
+A SNES themed static portfolio site.
 
 ## Deploy to GitHub Pages
 
