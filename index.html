@@ -3,13 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QUANTUMHEART :: SOFTWARE PORTFOLIO</title>
+<title>Quantumheart — Software Developer</title>
+<meta name="description" content="Open source and privacy-focused software by Quantumheart. Matrix ecosystem tools, game systems, and more.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 <!-- snes.css by devMiguelCarrero (MIT) — https://github.com/devMiguelCarrero/snes.css -->
 <link rel="stylesheet" href="https://unpkg.com/snes.css@1.0.1/dist/snes.min.css">
 <link rel="stylesheet" href="style.css">
+<!-- Theme script runs immediately to prevent flash of wrong theme -->
+<script src="theme.js"></script>
 </head>
 <body>
 
@@ -66,9 +69,7 @@
     <div class="panel">
       <div class="about-text">
         <p>I'm a software developer focused on <span class="label">privacy-first communication</span> and <span class="label">open source</span>. My work centers on the Matrix ecosystem — building encrypted chat clients, push delivery infrastructure, and tools that give people control over their own data.</p>
-        <br>
-        <p> Beyond messaging, I build game systems and mods with deep progression mechanics, testing rigor, and networked multiplayer state. I care about clean architecture, thorough test coverage, and shipping software that respects users.</p>
-        <br>
+        <p>Beyond messaging, I build game systems and mods with deep progression mechanics, testing rigor, and networked multiplayer state. I care about clean architecture, thorough test coverage, and shipping software that respects users.</p>
         <p>Current stack: <span class="value">Dart/Flutter</span>, <span class="value">C#/.NET</span>, <span class="value">TypeScript</span>, and whatever the project needs.</p>
       </div>
     </div>
@@ -197,46 +198,10 @@
 <!-- FOOTER -->
 <footer>
   <p>made with <span class="heart">♥</span> and 16-bit style · <a href="https://github.com/devMiguelCarrero/snes.css" target="_blank" rel="noopener">powered by snes.css</a></p>
-  <p style="margin-top:8px;">© 2026 quantumheart</p>
+  <p style="margin-top:0.5rem;">© 2026 quantumheart</p>
 </footer>
 
-<!-- ================================================================
-     SCRIPT
-     ================================================================ -->
-<script>
-// Theme toggle — persist in localStorage
-(function() {
-  var stored = localStorage.getItem('theme');
-  if (stored === 'light') {
-    document.documentElement.setAttribute('data-theme', 'light');
-  } else if (stored === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
-    document.documentElement.setAttribute('data-theme', 'light');
-  }
-})();
-
-document.getElementById('themeToggle').addEventListener('click', function() {
-  var current = document.documentElement.getAttribute('data-theme');
-  var next = current === 'light' ? 'dark' : 'light';
-  document.documentElement.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
-});
-</script>
-
-<script>
-// Boot screen animation
-window.addEventListener('DOMContentLoaded', function() {
-  var boot = document.getElementById('boot');
-  if (!boot) return;
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    boot.style.display = 'none';
-    return;
-  }
-  boot.classList.add('fade-out');
-  setTimeout(function() { boot.style.display = 'none'; }, 5400);
-});
-</script>
+<script src="boot.js" defer></script>
 
 </body>
 </html>
